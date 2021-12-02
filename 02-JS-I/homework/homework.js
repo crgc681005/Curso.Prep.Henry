@@ -1,7 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = 'Hola 20111130';
+const nuevaString = 'Hola 20111201';
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 1;
@@ -89,26 +89,20 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num<50) {
-    return true;
-  }
-  return false;
+  return num > 50;  
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  if (x % y) {
-    return true
-  }
-  return false
+  return x % y;
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2) == 0 {
+  if (num % 2 === 0) {
     return true;
   }
   return false
@@ -118,7 +112,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2) <> 0 {
+  if (num % 2 === 1) {
     return true;
   }
   return false
@@ -166,14 +160,14 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero > 0) {
-    return "Es Positivo";
+  if(numero === 0) {
+    return false;
   }
-  elseif (numero < 0){
-    return "Es Negativo";
+  else if(numero > 0) {
+    return "Es positivo";
   }
-  elseif (numero == 0){
-    return false
+  else {
+    return "Es negativo";
   }
 }
 
@@ -181,21 +175,21 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  console.log(str + "!");
+  return str + "!";
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  console.log(nombre + " " + apellido )
+  return nombre + ' ' + apellido;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  console.log('hola ' + nombre + '!');
+  return "Hola " + nombre + "!";  
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -229,13 +223,14 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
-    return "Es vocal"
+  if(letra.length > 1){
+    return "Dato incorrecto";
   }
-  return "Dato incorrecto" 
+  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return "Es vocal";
+  }
+  return "Dato incorrecto";
 }
-
-
 
 // No modificar nada debajo de esta línea
 // --------------------------------

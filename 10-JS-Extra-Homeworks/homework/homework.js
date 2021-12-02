@@ -12,7 +12,6 @@ function deObjetoAmatriz(objeto){
   //Escribe tu código aquí
 }
 
-
 function numberOfCharacters(string) {
   //La función recibe un string. Recorre el srting y devuelve el caracter con el número de veces que aparece 
   //en formato par clave-valor.
@@ -20,14 +19,12 @@ function numberOfCharacters(string) {
   //Escribe tu código aquí
 }
 
-
 function capToFront(s) {
   //Realiza una función que reciba como parámetro un string y mueva todas las letras mayúsculas
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
 }
-
 
 function asAmirror(str) {
   //La función recibe una frase. 
@@ -37,7 +34,6 @@ function asAmirror(str) {
   //Escribe tu código aquí
 } 
 
-
 function capicua(numero){
   //Escribe una función, la cual recibe un número y determina si es o no capicúa.
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
@@ -45,13 +41,11 @@ function capicua(numero){
   //Escribe tu código aquí
 }
 
-
 function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
 }
-
 
 function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
@@ -59,16 +53,27 @@ function sortArray(arr) {
   //Escribe tu código aquí
 }
 
-
 function buscoInterseccion(arreglo1, arreglo2){
   //Existen dos arrays, cada uno con 5 números. A partir de ello, escribir una función que permita 
   //retornar un nuevo array con la intersección de ambos elementos. (Ej: [4,2,3] unión [1,3,4] = [3,4].
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
+  let nuevoarray[]
+  var x1 = 0;
+  var x2 = 0;
+  var xx = 0;
+  for (x1=0, x1<5, x1++)
+  {
+    for (x2=0, x2<5, x2++) {
+      if (arreglo1[x1]= arreglo2[x2]) {
+        nuevoarray[xx]=arreglo1[x1];
+        xx= xx + 1;        
+      }        
+    }
+    return nuevoarray[];
+  }
 }
-
-
 
 // No modificar nada debajo de esta línea
 // --------------------------------
@@ -83,4 +88,3 @@ module.exports = {
    sortArray,
    buscoInterseccion,
 };
-
